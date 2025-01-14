@@ -1,0 +1,464 @@
+/* General Body and Background */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f9; /* Soft light grey background */
+    color: #3e2723; /* Dark coffee color */
+    margin: 0;
+    padding: 0;
+}
+
+/* Navbar */
+.navbar-brand{
+    font-size: 2rem;
+    color: black;
+    font-family: 'Courier New', Courier, monospace;
+
+}
+.navbar-brand:hover{
+    color: black;
+}
+
+.nav-link{
+    margin-right: 10px;
+    margin-left: 10px;
+    color: black;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    text-transform: uppercase
+}
+.nav-link:hover{
+    color: black;
+}
+
+
+/* Navbar search button */
+.search{
+    height: 40px;
+    width: 80%;
+    border-radius: 60px;
+    outline: none;
+    margin-right: -35px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: 2px solid rgb(90, 51, 38);
+}
+
+.btn0 {
+    height: 40px;
+    width: 40%;
+    outline: none;
+    border: none;
+    background: rgb(210, 127, 72);
+    color: white;
+    border-radius: 60px;
+    font-weight: 700;
+}
+
+.btn0:hover {
+    background-color: #ff9800; /* Darker peach */
+}
+
+/* Memastikan tampilan responsif dan menarik */
+.main {
+    position: relative;
+    background: url(images/1.jpg) no-repeat center center; /* Ganti dengan gambar latar belakang pilihan Anda */
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: left;
+    color: white;
+    padding: 0;
+    box-shadow: inset 0 0 100px rgba(126, 87, 28, 0.4); /* Bayangan gelap di latar belakang */
+    background-attachment: fixed; /* Membuat latar belakang tetap pada posisi */
+  }
+  
+  /* Header h1 dengan animasi dan efek visual */
+  .main h1 {
+    font-size: 2rem; /* Ukuran font besar untuk menarik perhatian */
+    font-weight: 700;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: #3e2723;
+    line-height: 1.4;
+    letter-spacing: 2px;
+    text-transform: uppercase; /* Mengubah teks menjadi huruf kapital semua */
+    text-shadow: 3px 3px 8px rgba(0, 0, 0, 0.6); /* Bayangan teks yang lebih dramatis */
+    margin-top: 20px;
+    animation: fadeIn 2s ease-out; /* Menambahkan animasi fade-in */
+  }
+  
+  /* Animasi fade-in untuk heading */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(-30px); /* Animasi muncul dari bawah */
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  
+  
+  /* Membuat kolom lebih responsif pada perangkat kecil */
+  @media (max-width: 768px) {
+    .main h1 {
+      font-size: 2.5rem; /* Menyesuaikan ukuran font di perangkat kecil */
+      letter-spacing: 1px; /* Mengurangi jarak antar huruf */
+    }
+  
+    .btn1 {
+      padding: 12px 30px; /* Menyesuaikan ukuran tombol di perangkat kecil */
+    }
+  }
+  
+
+/* Gallery */
+.new {
+    background: url(images/4.jpg);
+    background-size: cover;
+    height: 100vh;
+    background-position: 50% 50%;
+    width: 100%;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+.new h1 {
+    color: #3e2723;
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+/* About Store */
+.about h1{
+    font-size: 2.5rem;
+    color: #3e2723;
+    font-weight: 600;
+}
+
+/* Best Sellers Section */
+.product {
+    background: linear-gradient(145deg, #ffccbc, #fff8e1c8); /* Soft peach gradient */
+    padding: 60px 0;
+}
+
+.product .card {
+    border: none;
+    box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.product .card-body {
+    padding: 0;
+}
+
+.product img {
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.product .card:hover img {
+    transform: scale(1.05);
+}
+
+.product h1 {
+    font-size: 2.5rem;
+    color: #3e2723;
+    font-weight: 600;
+}
+
+.product h6 {
+    font-size: 1.25rem;
+    color: #3e2723;
+    font-weight: 600;
+    margin-top: 15px;
+}
+
+.product p {
+    font-size: 1.1rem;
+    color: #ff7043; /* Peach color */
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+
+/* Menu Section */
+
+.menu-heading {
+    font-size: 2.5rem;
+    color: #3e2723;
+    font-weight: 600;
+}
+
+.subheading {
+    font-size: 1.25rem;
+    color: #8d6e63;
+    font-style: italic;
+    margin-top: 10px;
+}
+
+.menu-item {
+    margin-bottom: 30px;
+}
+
+.menu-item .card {
+    border: none;
+    box-shadow: 0px 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.menu-item img {
+    border-radius: 10px;
+    max-height: 200px;
+    object-fit: cover;
+    transition: transform 0.3s ease;
+}
+
+.menu-item:hover img {
+    transform: scale(1.05);
+}
+
+.item-title {
+    font-size: 1.25rem;
+    color: #3e2723;
+    font-weight: 600;
+}
+
+.price {
+    font-size: 1.125rem;
+    color: #ff7043;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.btn-add {
+    background-color: #d5bc76; /* Mint green */
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.btn-add:hover {
+    background-color: #bbb266;
+}
+
+/* Total Price */
+.total-text {
+    font-size: 1.5rem;
+    color: #3e2723;
+    font-weight: bold;
+    margin-top: 20px;
+}
+
+#totalPrice {
+    font-size: 1.75rem;
+    color: #ff7043;
+}
+.btn-view-cart {
+    background-color: #66bb6a;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    font-size: 1.1rem;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Footer Section */
+.news {
+    background-color: #3e2723; /* Dark coffee color */
+    color: white;
+    text-align: center;
+    padding: 60px 0;
+}
+
+.news input {
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #f1f1f1;
+    width: 50%;
+}
+
+.news .btn2 {
+    background-color: #ffab40;
+    border: none;
+    color: white;
+    padding: 12px 24px;
+    border-radius: 8px;
+    margin-left: 10px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.news .btn2:hover {
+    background-color: #ff9800;
+}
+
+/* Team Section */
+/* Gaya umum untuk gambar profil */
+.profile-img {
+    width: 150px; /* Atur lebar gambar profil */
+    height: 150px; /* Atur tinggi gambar profil */
+    object-fit: cover;
+    border-radius: 50%; /* Membuat gambar berbentuk lingkaran */
+    margin-bottom: 15px;
+    transition: transform 0.3s ease-in-out;
+}
+
+  /* Efek zoom pada gambar profil saat hover */
+.profile-img:hover {
+    transform: scale(1.1); /* Zoom gambar saat hover */
+}
+/* Gaya untuk judul dan deskripsi dalam kartu */
+.card-tittle {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.card-text {
+    font-size: 1rem;
+    color: #777;
+}
+
+/* background team */
+.team {
+    background-color: #fcf2e3;
+}
+
+/* Gaya untuk ikon sosial media */
+.socials {
+    margin-top: 15px;
+}
+.social-icon {
+    font-size: 1.5rem;
+    color: #333;
+    margin: 0 10px;
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: #007bff; /* Mengubah warna saat hover */
+}
+
+/* Efek shadow pada kartu */
+.card {
+    border: none;
+    border-radius: 10px; /* Mengatur sudut kartu agar lebih melengkung */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+    transform: translateY(-10px); /* Efek mengangkat kartu saat hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bayangan lebih tegas saat hover */
+}
+
+  /* Gaya untuk tombol dan judul bagian */
+.section-header h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Background dan padding */
+.contact {
+    background: linear-gradient(135deg, #f3f4f7, #dbe2e6);
+    padding: 80px 0;
+  }
+
+/* Pengaturan heading */
+.contact h1 {
+    font-size: 36px;
+    font-weight: 700;
+    color: #333;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+.contact h6 {
+    font-size: 18px;
+    color: #7a4f29;
+    font-style: italic;
+}
+.contact {
+    background-color: #cfe8efe1;
+}
+
+/* Styling form dan input */
+.form-control {
+    border-radius: 10px;
+    border: 1px solid #ddd;
+    padding: 15px;
+    font-size: 16px;
+    width: 100%;
+    box-sizing: border-box;
+    background-color: #f8f9fa;
+    transition: all 0.3s ease;
+}
+.form-control:focus {
+    border-color: #007bff;
+    box-shadow: 0 0 5px rgba(0, 123, 255, 0.5);
+    background-color: #fff;
+}
+/* Styling tombol submit */
+.btn {
+    background-color: #007bff;
+    color: white;
+    font-size: 16px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: all 0.3s ease;
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+ /* Styling kolom teks */
+.col-lg-4 h6 {
+    font-size: 18px;
+    font-weight: 600;
+    color: #333;
+}
+
+.col-lg-4 p {
+    font-size: 16px;
+    color: #666;
+}
+
+  /* Pengaturan kolom form */
+.row {
+    margin-bottom: 20px;
+}
+ /* Margin dan Padding */
+.py-5 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.col-lg-7 {
+    background-color: #fff;
+    border-radius: 10px;
+    padding: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.col-lg-4 {
+    padding-top: 30px;
+}
+
+  /* Responsif untuk perangkat kecil */
+@media (max-width: 768px) {
+.col-lg-7 {
+    margin-top: 20px;
+}
+
+.btn {
+    width: 100%;
+}
+}
